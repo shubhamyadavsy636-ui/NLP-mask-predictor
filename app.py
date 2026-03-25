@@ -1,15 +1,11 @@
 import streamlit as st
-import torch
+import torch 
 from transformers import BertTokenizer, BertForMaskedLM
 
-MODEL_PATH = r"./results/checkpoint-1113"
+
+model = BertForMaskedLM.from_pretrained("shubham-ml636/mini-bert-mask")
 
 tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
-
-model = BertForMaskedLM.from_pretrained(
-    MODEL_PATH,
-    local_files_only=True
-)
 
 model.eval()
 
