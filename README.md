@@ -8,7 +8,7 @@ Project Overview
 This project implements a Masked Language Model (MLM) using BERT to predict missing words in a sentence.
 Given an input sentence with a [MASK] token, the model intelligently predicts the most probable words based on contextual understanding.
 This project demonstrates end-to-end deployment of a transformer-based NLP model, from training to a publicly accessible web application.
-
+     
 Ex. The capital of india is [MASK]. 
 
 
